@@ -1,6 +1,10 @@
 
-
+from numpy import linspace,sin,pi
+from matplotlib.pyplot import figure
+from matplotlib import *
 import matplotlib
+#from numpy import sin,pi
+#from math import pi as pi
 
 def main():
 
