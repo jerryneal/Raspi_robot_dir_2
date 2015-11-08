@@ -130,12 +130,25 @@ class Walk():
 	def __init__(self):
 		self.pin = 'Pin15'
 		self.voltage = '15V'
+        servos = [myServo1,myServo2,myServo3,myServo4,myServo5,myServo6,myServo7,myServo8]
+        for i in range(8):
+            servos.append('myServo'+ ' '+ i)
+        print servos
 		
 	def moveForward(self):
 		# 1. Switch on the particular breadboard PIN
 		# 2. Intialize the legs to original position before movement.
 		# 3. Send the necessary voltage
-		pass
+        # 4. Fair chance is that we would be using a shift register to get this
+        #     working
+
+        leftServos = servos[:4]
+        rightServos = servos[4:]
+        for i in leftServos:
+            i.write(0)
+        for i in rightServos:
+            i.write(180)
+
 
 	def moveBackward(self):
 		# 1. Switch on the particular breadboard PIN
