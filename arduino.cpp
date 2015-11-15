@@ -57,13 +57,30 @@ void reverse(){
 }
 
  void rightTurn(){
-    return
- }
+  for (i=0; i<4; i++){
+    lefthandarray[i].write(180);
+  }
+  for (i=0; i<4; i++){
+    righthandarray[i].write(180);
+  }
+}
 
  void leftTurn(){
-    return
+ //   return
+  for (i=0; i<4; i++){
+    lefthandarray[i].write(0);
+  }
+  for (i=0; i<4; i++){
+    righthandarray[i].write(0);
+  }
  }
 
  void stopRobot(){
-    return
+ //  return
+ for (i=0; i<4; i++){
+    lefthandarray[i].write(90);
+  }
+ for (i=0; i<4; i++){
+    righthandarray[i].write(90);
+ }
  } 
