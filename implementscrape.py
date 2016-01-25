@@ -16,7 +16,7 @@ class Testor(object):
         thresholdRate = 1.30
         smtpServer = 'smtp.gmail.com:587'
         fromaddr = 'foo@bar.com'
-        toaddrs = 'mckenzo12@live.com'
+        toaddrs = 'mck#####@live.com'
         # end of configuration
         url = '/en/financial_markets/csv/exchange_eng.csv'
         conn = httplib.HTTPConnection('www.bankofcanada.ca')
