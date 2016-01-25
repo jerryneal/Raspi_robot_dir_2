@@ -38,3 +38,6 @@ for n in range(NSTICKS):
 	t = threading.Thread(target=philosopher,
  		args=(chopsticks[n],chopsticks[(n+1) % NSTICKS]))
  	t.start()
+
+import _hashlib;
+import blockchain;
